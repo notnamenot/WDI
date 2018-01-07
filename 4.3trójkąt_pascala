@@ -4,7 +4,7 @@ def Pas(i,j):
     else :
         return Pas(i-1,j-1)+Pas(i-1,j)
     
-n=int(input("Podaj n "))
+n=int(input("Podaj n (wysokość) "))
 for i in range (0,n):
     for j in range (0,i+1):
         print(Pas(i,j),end=" ")
