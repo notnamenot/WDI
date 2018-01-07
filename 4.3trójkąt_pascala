@@ -1,0 +1,11 @@
+def Pas(i,j):
+    if i==0 or j==0 or j==i:
+        return 1
+    else :
+        return Pas(i-1,j-1)+Pas(i-1,j)
+    
+n=int(input("Podaj n "))
+for i in range (0,n):
+    for j in range (0,i+1):
+        print(Pas(i,j),end=" ")
+    print()
