@@ -5,7 +5,10 @@ def Pas(i,j):
         return Pas(i-1,j-1)+Pas(i-1,j)
     
 n=int(input("Podaj n (wysokość) "))
-for i in range (0,n):
-    for j in range (0,i+1):
-        print(Pas(i,j),end=" ")
-    print()
+
+for i in range(n):
+    print(" "*(n-i-1), end="") 
+    for j in range(i+1):
+        print(Pas(i,j), end=" ")
+    print("")
+    
